@@ -1,0 +1,128 @@
+body {
+    background-color: #4B4747;
+    margin: 0;
+}
+header {
+    display: flex;
+    background-color: #4B4747;
+    color: #F8F6C9;
+    padding: 10px;
+}
+.logo {
+    font-size: 40px;
+}
+span {
+    font-size: 24px;
+}
+ul {
+    align-items: end;
+}
+li {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul,
+li {
+    display: inline-block;
+}
+
+
+.form {
+    background-color: #F8F6C9;
+    color: #4B4747;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 370px;
+}
+.formB {
+    background-color: #4B4747;
+    color: #F8F6C9;
+    border-radius: 45px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+}
+input {
+    display: flex;
+    width: 300px;
+    margin: 15px;
+}
+.razds {
+    text-align: center;
+    display: flex;
+    width: 600px;
+    height: 30px;
+}
+.razd1,
+.razd2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B4747;
+    width: 300px;
+    height: 30px;
+}
+.razd1 {
+    box-shadow: inset -5px -5px 4px rgba(75, 71, 71, 0.25), inset 5px 5px 4px rgba(75, 71, 71, 0.5);
+}
+
+
+footer {
+    background-color: #4B4747;
+    color: #F8F6C9; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    height: 100px;
+}
+.footerT {
+    display: inline-flex;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+button{
+    background-color: #F8F6C9;
+    color: #4B4747;
+    border-radius: 45px;
+    font-size: 28px;
+    width: 150px;
+    height: 65px;   
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+.networks {
+    display: flex;
+    width: 300px;
+}
+.network1 {
+    background: url('https://api.iconify.design/uil/instagram-alt.svg?color=%23f8f6c9&width=73&height=73') no-repeat center center / contain;
+}
+.network2 {
+    background: url('https://api.iconify.design/fa6-brands/telegram.svg?color=%23f8f6c9&width=73&height=73') no-repeat center center / contain;
+}
+.network3 {
+    background: url('https://api.iconify.design/entypo-social/vk-alternitive.svg?color=%23f8f6c9&width=73&height=73') no-repeat center center / contain;
+}
+.network1,
+.network2,
+.network3 {
+    display: flex;
+    margin-right: 10px;
+    width: 73px;
+    height: 73px;
+}

@@ -1,0 +1,226 @@
+body {
+    background-color: #4B4747;
+    margin: 0;
+}
+header {
+    display: flex;
+    background-color: #4B4747;
+    color: #F8F6C9;
+    padding: 10px;
+}
+.logo {
+    font-size: 40px;
+}
+span {
+    font-size: 24px;
+}
+ul {
+    align-items: end;
+}
+li {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul,
+li {
+    display: inline-block;
+}
+
+
+article {
+    background-color: #F8F6C9;
+    color: #4B4747;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 5vh;
+}
+.art {
+    background-color: #F8F6C9;
+    color: #4B4747;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh; 
+    margin-top: 5vh;   
+}
+.text,
+h1 {
+    color: #4B4747;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+.text {
+    font-size: 1.5em;
+}
+.album {
+    width: 350px;
+    height: 350px;
+}
+img {
+    border: solid 5px #F8F6C9;
+}
+
+
+.form {
+    background-color: #F8F6C9;
+    color: #4B4747;
+}
+
+
+footer {
+    background-color: #4B4747;
+    color: #F8F6C9; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    height: 100px;
+}
+.footerT {
+    display: inline-flex;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+button{
+    background-color: #F8F6C9;
+    color: #4B4747;
+    border-radius: 45px;
+    font-size: 28px;
+    width: 150px;
+    height: 65px;   
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+.networks {
+    display: flex;
+    width: 300px;
+}
+.network1 {
+    background: url('https://api.iconify.design/uil/instagram-alt.svg?color=%23f8f6c9&width=73&height=73') no-repeat center center / contain;
+}
+.network2 {
+    background: url('https://api.iconify.design/fa6-brands/telegram.svg?color=%23f8f6c9&width=73&height=73') no-repeat center center / contain;
+}
+.network3 {
+    background: url('https://api.iconify.design/entypo-social/vk-alternitive.svg?color=%23f8f6c9&width=73&height=73') no-repeat center center / contain;
+}
+.network1,
+.network2,
+.network3 {
+    display: flex;
+    margin-right: 10px;
+    width: 73px;
+    height: 73px;
+}
+a {
+    text-decoration: none;
+    color: #4B4747;
+}
+a:hover {
+    color: #cec863;
+    text-decoration: underline;
+}
+
+
+/*телефон, пока что без бургера*/
+@media(max-width: 650px) {
+    ul {
+        display: none;
+    }
+    article,
+    .art {
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+    }
+    .footerT {
+        display: none;
+    }
+    img, 
+    .album {
+        transform: scale(0.5);
+    }
+    span {
+        display: none;
+    }
+    header {
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    footer {
+        margin-top: 0;
+        width: 100vw;
+    }
+    .network1,
+    .network2,
+    .network3 {
+        transform: scale(0.75);
+        margin: 0;
+    }
+    button {
+        transform: scale(0.75);
+    }
+}
+
+
+/*планшет вертикально*/
+@media(max-width: 1000px) {
+    ul {
+        display: none;
+    }
+    .footerT {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    footer {
+        justify-content: space-around;
+    }
+    article,
+    .art {
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+    }
+    img, 
+    .album {
+        transform: scale(0.7);
+    }
+
+}
+/*планшет горизонтально*/
+@media(min-width:1024px) and (max-width:1200px) {
+    .footerT {
+        display: none;
+    }
+    footer {
+        justify-content: space-around;
+    }
+    ul {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+}
+
